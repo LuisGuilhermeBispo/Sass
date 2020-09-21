@@ -2,7 +2,7 @@
 
   const target = document.querySelector(".target");
   const links = document.querySelectorAll(".mynav a");
-  const colors = ["deepskyblue", "orange", "firebrick", "gold", "magenta", "black", "darkblue"];
+  const colors = ["#ffbf00", "#414151", "firebrick", "gold", "black", "darkblue"];
 
   function mouseenterFunc() {
     if (!this.parentNode.classList.contains("active")) {

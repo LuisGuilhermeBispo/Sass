@@ -1,36 +1,77 @@
  h1 {
-    text-align: center;
-    margin: 80px 0;
-  }
-  
-  .mynav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .mynav li:not(:last-child) {
-    margin-right: 20px;
-  }
-  
-  .mynav a {
-    display: block;
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    padding: 7px 15px;
-  }
-  
-  .target {
-    position: absolute;
-    border-bottom: 4px solid transparent;
-    z-index: -1;
-    transform: translateX(-60px);
-  }
-  
-  .mynav a,
-  .target {
-    transition: all .35s ease-in-out;
-  }
+     text-align: center;
+     margin: 80px 0;
+ }
+
+ .mynav ul {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .mynav li:not(:last-child) {
+     margin-right: 20px;
+ }
+
+ .mynav li {
+     align-self: center;
+ }
+
+ .mynav a {
+     display: block;
+     font-size: 20px;
+     color: black;
+     text-decoration: none;
+     padding: 7px 15px;
+ }
+
+ .target {
+     position: absolute;
+     border-bottom: 4px solid transparent;
+     z-index: -1;
+     transform: translateX(-60px);
+ }
+
+ .mynav a,
+ .target {
+     transition: all .35s ease-in-out;
+ }
+
+ .mynav {
+     &__img {
+         width: 130px;
+     }
+ }
+
+
+ .banner {
+     background-image: url("../assets/images/banner.jpg");
+     height: 500px;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     &__img {
+         width: 100%;
+     }
+ }
+
+ .title-banner {
+     position: absolute;
+     left: 0;
+     top: 50%;
+     text-align: center;
+     color: #000;
+
+     &__text {
+         background-color: #414151;
+         color: #fff;
+         padding: 18px;
+         font-size: 25px;
+         letter-spacing: 10px;
+     }
+ }

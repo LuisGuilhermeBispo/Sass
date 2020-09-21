@@ -42,10 +42,15 @@ h1 {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .mynav li:not(:last-child) {
   margin-right: 20px;
+}
+
+.mynav li {
+  align-self: center;
 }
 
 .mynav a {
@@ -68,8 +73,39 @@ h1 {
   transition: all .35s ease-in-out;
 }
 
+.mynav__img {
+  width: 130px;
+}
+
+.banner {
+  background-image: url("../assets/images/banner.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner__img {
+  width: 100%;
+}
+
+.title-banner {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  color: #000;
+}
+.title-banner__text {
+  background-color: #414151;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
 body {
-  background: #fcfffd;
+  background: #fffef388;
   padding: 0;
   margin: 0;
   font-family: "Montserrat Regular", "sans-serif";
