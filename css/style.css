@@ -1,23 +1,98 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - arquivo.scss
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url(../assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(../assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url(../assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url(../assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url(../assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: 'Lato Light';
+  src: url(../assets/fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+  font-family: 'Lato Regular';
+  src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato Bold';
+  src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+}
+h1 {
+  text-align: center;
+  margin: 80px 0;
+}
 
-Backtrace:
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby26-x64/bin/sass:23:in `load'
-C:/Ruby26-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - arquivo.scss"; }
+.mynav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mynav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mynav a {
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 7px 15px;
+}
+
+.target {
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+  transition: all .35s ease-in-out;
+}
+
+body {
+  background: #fcfffd;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat Regular", "sans-serif";
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.main-container {
+  padding-top: 20px;
+}
+
+.title {
+  border-bottom: 1px solid #8a8a8a;
+  font: 30px/35px "Montserrat Regular", "sans-serif";
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.text {
+  font: 16px/20px "Lato Regular", "sans-serif";
+}
+
+/*# sourceMappingURL=style.css.map */
