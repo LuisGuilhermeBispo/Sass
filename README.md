@@ -1,4 +1,4 @@
-## Design
+## Gastown Outlet - Referência em Design de Moda
 
 ### Instalação
 
