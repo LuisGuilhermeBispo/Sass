@@ -12,6 +12,13 @@ body {
     margin-left: auto;
   }
 
+  .container-fluid{
+    margin-right: auto;
+    margin-left: auto;
+    display:flex;
+    width: 100%;
+  }
+
   .container-flex{
     padding-right: 15px;
     padding-left: 15px;
