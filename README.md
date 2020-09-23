@@ -11,5 +11,5 @@ Para compilar o estilo escrito em *.scss para *.css, abra o terminal na raiz do 
 ### Equipe
 
 * Luis Bispo, rm80389
-* Michael Andrews, rmXXXXX
-* Fernando Laurino, rmXXXXX
+* Michael Andrews, rm82443
+* Fernando Laurino, rm83825
