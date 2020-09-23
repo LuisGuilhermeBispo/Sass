@@ -1,12 +1,85 @@
-.bannerContato {
-    background-image: url("../assets/images/spring-fashion.jpg");
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    &__img {
-        width: 100%;
+.contato{
+    font-family: "Montserrat Regular", "sans-serif";
+    background: #fff;
+    padding: 3rem;
+    @media(max-width:768px){
+        padding: 2rem;
+    }
+    &-container.wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+    &-banner{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &-img img{
+        max-width: 250px;
+        margin-top: 30px;
+        @media (max-width:768px){
+            max-width: 170px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .form{
+        &-contato{
+            flex: 0 0 35%;
+        }
+        &-group {
+            display: flex;
+            flex-direction: column;
+        }
+        &-input {
+            padding: 10px;
+            height: 25px;
+            margin: 10px 0;
+            width: 100%;
+            @media (max-width:768px){
+                width: unset;
+            }
+            max-width: 100%;
+            box-shadow: 1px 1px 8px -2px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            border: none;
+            background: #f3f3f3;
+            color: #000;
+            outline: none;
+            &::placeholder {
+                color: #000;
+                font-size: 15px;
+            }
+        }
+    }
+    .btn {
+        outline: none;
+        padding: 5px 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #ffab02;
+        color: #fff;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        svg{
+            margin-right: 10px;
+        }
+        &:hover {
+            background: hsl(40deg 100% 38%);
+        }
+    }
+    textarea.form-input {
+        min-height: 100px;
     }
 }
+.container-contato {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width:768px){
+        flex-direction: column;
+    }
+}
+
