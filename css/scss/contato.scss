@@ -68,7 +68,7 @@
             margin-right: 10px;
         }
         &:hover {
-            background: hsl(40deg 100% 38%);
+            background: l(40deg 100% 38%);
         }
     }
     textarea.form-input {
@@ -83,3 +83,49 @@
     }
 }
 
+.bannerContato {
+    background-image: url(../assets/images/spring-fashion.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#outlet{
+    background-image: url(../assets/images/bannerOutlet.jpg);
+}
+
+.listServices{
+    text-align: justify
+}
+
+.gallery {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .gallery > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .gallery > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .gallery:hover { flex: 1 1 50%; }
+  .gallery:hover > img {
+    width: 100%;
+    height: 100%;
+  }
