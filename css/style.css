@@ -1,34 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: "Montserrat Regular";
   src: url(../assets/fonts/Montserrat/Montserrat-Regular.ttf);
 }
 @font-face {
-  font-family: 'Montserrat Bold';
+  font-family: "Montserrat Bold";
   src: url(../assets/fonts/Montserrat/Montserrat-Bold.ttf);
 }
 @font-face {
-  font-family: 'Montserrat SemiBold';
+  font-family: "Montserrat SemiBold";
   src: url(../assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
 }
 @font-face {
-  font-family: 'Montserrat Medium';
+  font-family: "Montserrat Medium";
   src: url(../assets/fonts/Montserrat/Montserrat-Medium.ttf);
 }
 @font-face {
-  font-family: 'Montserrat Light';
+  font-family: "Montserrat Light";
   src: url(../assets/fonts/Montserrat/Montserrat-Light.ttf);
 }
 @font-face {
-  font-family: 'Lato Light';
+  font-family: "Lato Light";
   src: url(../assets/fonts/Lato/Lato-Light.ttf);
 }
 @font-face {
-  font-family: 'Lato Regular';
+  font-family: "Lato Regular";
   src: url(../assets/fonts/Lato/Lato-Regular.ttf);
 }
 @font-face {
-  font-family: 'Lato Bold';
+  font-family: "Lato Bold";
   src: url(../assets/fonts/Lato/Lato-Bold.ttf);
 }
 h1 {
@@ -70,7 +70,7 @@ h1 {
 
 .mynav a,
 .target {
-  transition: all .35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .mynav__img {
@@ -84,6 +84,11 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .banner {
+    height: fit-content;
+  }
 }
 .banner__img {
   width: 100%;
@@ -116,7 +121,7 @@ h1 {
   background-color: #eaeaea8f;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   margin: 10px;
 }
 .card__img {
@@ -300,6 +305,97 @@ h1 {
 
 .footer a {
   text-decoration: none;
+}
+
+.contato {
+  font-family: "Montserrat Regular", "sans-serif";
+  background: #fff;
+  padding: 3rem;
+}
+@media (max-width: 768px) {
+  .contato {
+    padding: 2rem;
+  }
+}
+.contato-container.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.contato-banner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.contato-img img {
+  max-width: 250px;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .contato-img img {
+    max-width: 170px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.contato .form-contato {
+  flex: 0 0 35%;
+}
+.contato .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.contato .form-input {
+  padding: 10px;
+  height: 25px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 1px 1px 8px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: none;
+  background: #f3f3f3;
+  color: #000;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .contato .form-input {
+    width: unset;
+  }
+}
+.contato .form-input::placeholder {
+  color: #000;
+  font-size: 15px;
+}
+.contato .btn {
+  outline: none;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffab02;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.contato .btn svg {
+  margin-right: 10px;
+}
+.contato .btn:hover {
+  background: #c28100;
+}
+.contato textarea.form-input {
+  min-height: 100px;
+}
+
+.container-contato {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .container-contato {
+    flex-direction: column;
+  }
 }
 
 body {
